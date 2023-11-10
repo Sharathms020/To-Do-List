@@ -90,7 +90,7 @@ function searchTodo(e){
 }
 
 function editTodofn(e){
-    const searchValue = e.target.parentElement.firstChild;
+    const searchValue = e.target.parentElement.firstChild.textContent;
     console.log(searchValue);
 }
 
