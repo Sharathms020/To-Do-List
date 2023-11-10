@@ -1,0 +1,97 @@
+/* universal selector*/
+*{
+    margin: 0;
+}
+/* Navbar section*/
+.navbar {
+    height: 30%;
+    background-color: tomato;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: white;
+}
+.searchHeading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: white;
+}
+
+/* Adding of items search inputs*/
+.fname {
+    margin-bottom: 10px;
+    height: 60px;
+    width: 400px;
+    border-radius: 10px;
+    border-color: white;
+    padding-top: 5px;
+    padding-right: 10px;
+}
+
+/* Adding of singal todo */
+.addTodo {
+    display: flex;
+    justify-content: left;
+    /* margin: 40px 90px; */
+    padding: 10px;
+}
+
+.todo {
+    width: 600px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px;
+    border-color: tomato;
+}
+/* clicking submit button */
+.submit {
+    border-radius: 10px;
+    height: 30px;
+    box-shadow: 10px 10px 10px;
+    background-color: tomato;
+    color: white;
+}
+/* Display container */
+.container {
+    height: 40vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Delete button */
+
+.listElements {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* edit button */
+
+.edit-button {
+    background-color: tomato;
+    color: white;
+    border-radius: 10px;
+    margin: 5px 10px;
+}
+
+.btn-danger-delete {
+    background-color: tomato;
+    color: white;
+    border-radius: 10px;
+    margin: 5px 10px;
+}
+
+
+
