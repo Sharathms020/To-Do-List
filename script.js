@@ -90,10 +90,8 @@ function searchTodo(e){
 }
 
 function editTodofn(e){
-  const storeValue =e.target.parentElement;
-  storeValue.forEach(function(){
-     
-  })
+    const searchValue = e.target.parentElement.firstChild;
+    console.log(searchValue);
 }
 
 
