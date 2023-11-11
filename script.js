@@ -89,9 +89,21 @@ function searchTodo(e){
      
 }
 
-function editTodofn(e){
-    const searchValue = e.target.parentElement.firstChild.textContent;
-    console.log(searchValue);
-}
+function editTodofn(e) {
+  if (e.target.classList.contains('edit')) {
+      const li = e.target.parentElement;
+      const todoText = li.firstChild;
 
+      if (e.target.innerText === 'edit') {
+          const editText = prompt('Edit your todo:', todoText.textContent);
+          if (editText !== null) {
+              todoText.textContent = editText;
+              e.target.innerText = 'save';
+          }
+      } else if (e.target.innerText === 'save') {
+          const updatedText = todoText.textContent;
+          e.target.innerText = 'edit';
+      }
+  }
+}
 

@@ -10,34 +10,40 @@
     <nav class="navbar">
         <div class="heading">TO DO LIST</div>
         <div class="searchHeading">
-         <form class="searchToDo">
-            <label for="name">Search To Do Name:</label> 
-         <input type="text" id="name" class="fname" name="name">
-         </form>
+            <form class="searchToDo">
+                <label for="name">Search To Do Name:</label>
+                <input type="text" id="name" class="fname" name="name">
+            </form>
         </div>
-    </nav>&nbsp;
+    </nav>
+
     <div class="addTodoList">
         <form class="addToDo">
             <input type="text" id="todo" class="todo" name="todo">
             <button class="submit">Submit</button>
-            </form>
-    </div>&nbsp;
-    <div class="container">
-    <ul class="todos">
-    <li class="listElements">To Do 1 
-        <button  class=" edit-button edit">edit</button>&nbsp;
-        <button class=" btn-danger-delete delete">delete</button>
-    </li>
-    <li class="listElements"> To Do 2 
-        <button class=" edit-button edit">edit</button>&nbsp;
-        <button class=" btn-danger-delete delete">delete</button>
-    </li>
-    <li class="listElements">To Do 3 
-        <button class=" edit-button edit">edit</button>&nbsp;
-        <button class=" btn-danger-delete delete">delete</button>
-    </li>
-    </ul>
+        </form>
     </div>
+
+    <div class="container">
+        <ul class="todos">
+            <li class="listElements">
+                <span class="todoText">To Do 1</span>
+                <button class="edit-button edit">edit</button>
+                <button class="btn-danger-delete delete">delete</button>
+            </li>
+            <li class="listElements">
+                <span class="todoText">To Do 2</span>
+                <button class="edit-button edit">edit</button>
+                <button class="btn-danger-delete delete">delete</button>
+            </li>
+            <li class="listElements">
+                <span class="todoText">To Do 3</span>
+                <button class="edit-button edit">edit</button>
+                <button class="btn-danger-delete delete">delete</button>
+            </li>
+        </ul>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
