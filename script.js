@@ -26,13 +26,15 @@ todos.addEventListener('click',editTodofn);
 function  addtodos(e){
      e.preventDefault();
      var newToDo = todo.value;
-     
+     let span = document.createElement('span');
+     span.classList.add('todoText');
+     span.innerHTML = newToDo;
      // creating a new li item
      const li = document.createElement('li');
       // adding className of the same li
      li.className = "listElements" ;
       // inputing elements inside the li list
-     li.innerText = newToDo;
+     li.appendChild(span);
      
      // creating a new delete button
      
