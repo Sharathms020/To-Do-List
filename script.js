@@ -89,21 +89,44 @@ function searchTodo(e){
      
 }
 
+// function editTodofn(e) {
+//   if (e.target.classList.contains('edit')) {
+//       const li = e.target.parentElement;
+//       const todoText = li.firstChild;
+
+//       if (e.target.innerText === 'edit') {
+//           const editText = prompt('Edit your todo:', todoText.textContent);
+//           if (editText !== null) {
+//               todoText.textContent = editText;
+//               e.target.innerText = 'save';
+//           }
+//       } else if (e.target.innerText === 'save') {
+//           const updatedText = todoText.textContent;
+//           e.target.innerText = 'edit';
+//       }
+//   }
+// }
+
 function editTodofn(e) {
   if (e.target.classList.contains('edit')) {
       const li = e.target.parentElement;
-      const todoText = li.firstChild;
+      const todoText = li.querySelector('.todoText'); 
 
       if (e.target.innerText === 'edit') {
-          const editText = prompt('Edit your todo:', todoText.textContent);
-          if (editText !== null) {
-              todoText.textContent = editText;
-              e.target.innerText = 'save';
-          }
+          const currentText = todoText.textContent;
+          const editInput = document.createElement('input');
+          editInput.value = currentText;
+
+          todoText.textContent = '';
+          todoText.appendChild(editInput);
+
+          e.target.innerText = 'save';
       } else if (e.target.innerText === 'save') {
-          const updatedText = todoText.textContent;
+          const editInput = todoText.querySelector('input');
+          const updatedText = editInput.value;
+
+          todoText.textContent = updatedText;
           e.target.innerText = 'edit';
       }
   }
 }
-
